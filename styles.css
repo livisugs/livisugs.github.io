@@ -62,6 +62,8 @@ a:focus-visible, button:focus-visible{
   position: sticky;
   top: 0;
   z-index: 10;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   background: var(--paper);
   border-bottom: 1px solid var(--line);
   display: flex;
@@ -173,6 +175,8 @@ a:focus-visible, button:focus-visible{
 
 /* ---------------------------------- ticker ---------------------------------- */
 .ticker{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   background: var(--accent);
   color: #101010;
   overflow: hidden;
