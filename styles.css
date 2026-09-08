@@ -380,11 +380,26 @@ a:focus-visible, button:focus-visible{
 .banner-wrap{
   width: 100vw;
   margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+}
+.banner-track{
+  display: flex;
+  width: max-content;
+  animation: banner-scroll 36s linear infinite;
 }
 .banner-img{
   display: block;
-  width: 100%;
-  max-height: 22rem;
-  object-fit: cover;
-  object-position: center;
+  height: 22rem;
+  width: auto;
+  flex-shrink: 0;
+}
+@keyframes banner-scroll{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce){
+  .banner-track{ animation: none; }
+}
+@media (max-width: 640px){
+  .banner-img{ height: 12rem; }
 }
