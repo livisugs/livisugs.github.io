@@ -115,6 +115,13 @@ a:focus-visible, button:focus-visible{
   text-transform: lowercase;
   color: var(--muted);
 }
+.hero-star{
+  display: block;
+  margin: 1.6rem 0 1rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--accent);
+}
 .view-portfolio{
   display: inline-block;
   margin-top: 1.4rem;
