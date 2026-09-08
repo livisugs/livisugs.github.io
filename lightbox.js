@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-  var imgs = document.querySelectorAll('.scrap img, .carousel-slide');
+  var imgs = document.querySelectorAll('.scrap img');
   if(!imgs.length) return;
 
   var overlay = document.createElement('div');

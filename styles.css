@@ -336,59 +336,14 @@ a:focus-visible, button:focus-visible{
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
-/* --------------------------------- hero carousel --------------------------------- */
-.hero-carousel-wrap{
-  padding: 2.5rem clamp(1.25rem, 6vw, 2.4rem) clamp(3.2rem, 7vw, 4.6rem);
+/* --------------------------------- banner --------------------------------- */
+.banner-wrap{
+  padding: 0 clamp(1.25rem, 6vw, 2.4rem);
 }
-.hero-carousel{
-  position: relative;
-  max-width: 28rem;
-  margin: 0 auto;
-}
-.carousel-track{
-  position: relative;
-  aspect-ratio: 4 / 5;
-  overflow: hidden;
-}
-.carousel-slide{
-  position: absolute;
-  inset: 0;
+.banner-img{
+  display: block;
   width: 100%;
-  height: 100%;
+  max-height: 28rem;
   object-fit: cover;
-  object-position: center top;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.35s ease;
-  cursor: zoom-in;
-}
-.carousel-slide.active{
-  opacity: 1;
-  visibility: visible;
-}
-.carousel-arrow{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 5;
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 1px solid var(--line);
-  background: var(--paper);
-  color: var(--ink);
-  font-size: 1rem;
-  line-height: 1;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: border-color 0.2s ease;
-}
-.carousel-arrow:hover{ border-color: var(--ink); }
-.carousel-prev{ left: -1.2rem; }
-.carousel-next{ right: -1.2rem; }
-@media (max-width: 480px){
-  .carousel-prev{ left: 0.4rem; }
-  .carousel-next{ right: 0.4rem; }
+  object-position: center;
 }
