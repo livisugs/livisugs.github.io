@@ -3,13 +3,13 @@
    family throughout, bold lowercase tight-tracked type system.
 ----------------------------------------------------------------*/
 :root{
-  --mat: #000000;
-  --paper: #000000;
-  --paper-dim: #1A1A1A;
-  --ink: #FFFFFF;
-  --line: #2A2A2A;
+  --mat: #FFFFFF;
+  --paper: #FFFFFF;
+  --paper-dim: #F3F3F3;
+  --ink: #101010;
+  --line: #E6E6E6;
   --accent: #FFD1DC;
-  --muted: #9A9A9A;
+  --muted: #8A8A8A;
 }
 
 *{ box-sizing: border-box; }
