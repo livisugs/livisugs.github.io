@@ -158,6 +158,7 @@ a:focus-visible, button:focus-visible{
 }
 .collage.count-2 .scrap{ width: 47%; }
 .collage.count-4 .scrap{ width: 23%; }
+.collage.count-5 .scrap{ width: 18%; }
 .scrap img{
   width: 100%;
   height: 100%;
